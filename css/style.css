@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@font-face {
+  font-family: "InputMono";
+  src: url("fonts/InputMono-Bold.eot");
+  src: url("fonts/InputMono-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/InputMono-Bold.woff") format("woff"), url("fonts/InputMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "InputMono";
+  src: url("fonts/InputMono-Medium.eot");
+  src: url("fonts/InputMono-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/InputMono-Medium.woff") format("woff"), url("fonts/InputMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "InputMono";
+  src: url("fonts/InputMono-Light.eot");
+  src: url("fonts/InputMono-Light.eot?#iefix") format("embedded-opentype"), url("fonts/InputMono-Light.woff") format("woff"), url("fonts/InputMono-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+/* line 38, ../sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 41, ../sass/style.sass */
+html {
+  font-size: 18px;
+}
+@media screen and (min-width: 544px) {
+  /* line 41, ../sass/style.sass */
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 544px) {
+  /* line 41, ../sass/style.sass */
+  html {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 41, ../sass/style.sass */
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 41, ../sass/style.sass */
+  html {
+    font-size: 26px;
+  }
+}
+
+/* line 52, ../sass/style.sass */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+}
+
+/* line 68, ../sass/style.sass */
+.header {
+  background-color: #001f65;
+  color: #fff;
+  background-image: url("../img/cssclub-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0px;
+}
+@media screen and (max-width: 800px) {
+  /* line 68, ../sass/style.sass */
+  .header {
+    background-position: center 0px;
+    background-size: 780px;
+  }
+}
+
+/* line 79, ../sass/style.sass */
+.header__container {
+  position: relative;
+}
+/* line 81, ../sass/style.sass */
+.header__container .logo {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+/* line 85, ../sass/style.sass */
+.header__container h1 {
+  font-family: InputMono, helvetica, arial, sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10rem 0;
+}
+
+/* line 94, ../sass/style.sass */
+.main__container {
+  padding: 0 2rem;
+}
+@media screen and (min-width: 992px) {
+  /* line 94, ../sass/style.sass */
+  .main__container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* line 105, ../sass/style.sass */
+.ruleset-block {
+  padding-top: 4rem;
+}
+
+/* line 108, ../sass/style.sass */
+.ruleset-block__header h2.title {
+  font-family: InputMono, helvetica, arial, sans-serif;
+  color: #001f65;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  padding-bottom: 0.5rem;
+}
+/* line 115, ../sass/style.sass */
+.ruleset-block__header span {
+  font-weight: 100;
+}
+/* line 117, ../sass/style.sass */
+.ruleset-block__header p {
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+/* line 127, ../sass/style.sass */
+.ruleset-block__dynamics .dynamic {
+  padding-top: 2rem;
+}
+/* line 129, ../sass/style.sass */
+.ruleset-block__dynamics .dynamic .title {
+  font-family: InputMono, helvetica, arial, sans-serif;
+  color: #808080;
+  font-size: 1.2rem;
+}
+/* line 133, ../sass/style.sass */
+.ruleset-block__dynamics .dynamic p {
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+/* line 141, ../sass/style.sass */
+.footer__container .colophon {
+  padding: 4rem 0;
+  text-align: center;
+}
+/* line 144, ../sass/style.sass */
+.footer__container .colophon .ctin-logo {
+  margin-bottom: 1rem;
+}
+/* line 146, ../sass/style.sass */
+.footer__container .colophon h4 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 0.8rem;
+}

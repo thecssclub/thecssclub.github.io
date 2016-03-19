@@ -1,0 +1,149 @@
+// By @Szimbol
+// CssClub{}
+
+// Roboto
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700)
+
+// Input Mono
+@font-face
+	font-family: 'InputMono'
+	src: url('fonts/InputMono-Bold.eot')
+	src: url('fonts/InputMono-Bold.eot?#iefix') format("embedded-opentype"), url('fonts/InputMono-Bold.woff') format("woff"), url('fonts/InputMono-Bold.ttf') format("truetype")
+	font-weight: 700
+	font-style: normal
+
+@font-face
+	font-family: 'InputMono'
+	src: url('fonts/InputMono-Medium.eot')
+	src: url('fonts/InputMono-Medium.eot?#iefix') format("embedded-opentype"), url('fonts/InputMono-Medium.woff') format("woff"), url('fonts/InputMono-Medium.ttf') format("truetype")
+	font-weight: 500
+	font-style: normal
+
+@font-face
+	font-family: 'InputMono'
+	src: url('fonts/InputMono-Light.eot')
+	src: url('fonts/InputMono-Light.eot?#iefix') format("embedded-opentype"), url('fonts/InputMono-Light.woff') format("woff"), url('fonts/InputMono-Light.ttf') format("truetype")
+	font-weight: 100
+	font-style: normal
+
+// R-Units
+$xs: 544px
+$sm: 544px
+$md: 544px
+$lg: 992px
+$xl: 1200px
+
+
+// Theme
+*
+	box-sizing: border-box
+
+html
+	font-size: 18px
+	@media screen and (min-width: $sm)
+		font-size: 20px
+	@media screen and (min-width: $md)
+		font-size: 22px
+	@media screen and (min-width: $lg)
+		font-size: 24px
+	@media screen and (min-width: $xl)
+		font-size: 26px
+
+body
+	-webkit-font-smoothing: antialiased
+	text-rendering: optimizeLegibility
+	font-family: 'Roboto', helvetica, arial, sans-serif
+
+// Colors
+$primary: #001f65
+$secondary: #808080
+// UI
+$paragraph: #333333
+$paragraph-light: #808080
+
+// Wrap
+.wrap
+
+// Header
+.header
+	background-color: $primary
+	color: #fff
+	background-image: url('../img/cssclub-background.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center 0px
+	@media screen and (max-width: 800px)
+		background-position: center 0px
+		background-size: 780px
+		//min-height: 400px
+.header__container
+	position: relative
+	.logo
+		position: absolute
+		top: 1rem
+		right: 0
+	h1
+		font-family: InputMono, helvetica, arial, sans-serif
+		font-weight: 100
+		text-align: center
+		font-size: 2rem
+		padding: 10rem 0
+
+// Main
+.main
+.main__container
+	padding: 0 2rem
+	@media screen and (min-width: $lg)
+		width: 70%
+		margin: 0 auto
+// Individual Modifiers
+.ruleset-block--1
+	//padding-top: 8rem!important
+.ruleset-block--2
+.ruleset-block--3
+// Shared Block
+.ruleset-block
+	padding-top: 4rem
+.ruleset-block__header
+	h2.title
+		font-family: InputMono, helvetica, arial, sans-serif
+		color: $primary
+		font-size: 2rem
+		font-weight: 700
+		line-height: 3rem
+		padding-bottom: 0.5rem
+	span
+		font-weight: 100
+	p
+		font-weight: 300
+		line-height: 1.6rem
+.ruleset-block__dynamics
+	//Modifiers
+	.dynamic--1
+	.dynamic--2
+	.dynamic--3
+	.dynamic--4
+	//Shared Block
+	.dynamic
+		padding-top: 2rem
+		.title
+			font-family: InputMono, helvetica, arial, sans-serif
+			color: $paragraph-light
+			font-size: 1.2rem
+		p
+			font-weight: 300
+			line-height: 1.6rem
+
+
+// FOOTER
+.footer
+.footer__container
+	.colophon
+		padding: 4rem 0
+		text-align: center
+		.ctin-logo
+			margin-bottom: 1rem
+		h4
+			font-size: 0.8rem
+			font-weight: 300
+			line-height: 0.8rem
