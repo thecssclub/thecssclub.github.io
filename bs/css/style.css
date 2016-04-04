@@ -3,15 +3,9 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,500);
 /* line 2, ../sass/_init.sass */
 * {
-  box-sizing: border-box !important;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-/* line 7, ../sass/_init.sass */
-::selection {
-  background-color: #ff3333;
-  color: #fff;
 }
 
 /* line 6, ../sass/_type.sass */
@@ -159,55 +153,42 @@ h5 {
   }
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -ms-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  40% {
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  60%;
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
-}
 /* line 25, ../sass/style.sass */
 .container {
   margin: 0 auto;
   padding: 1.5rem 1rem;
 }
-/* line 28, ../sass/style.sass */
+@media screen and (min-width: 544px) {
+  /* line 25, ../sass/style.sass */
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 25, ../sass/style.sass */
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 25, ../sass/style.sass */
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 25, ../sass/style.sass */
+  .container {
+    width: 992px;
+  }
+}
+/* line 36, ../sass/style.sass */
 .container:after {
   content: ".";
   visibility: hidden;
   display: block;
   height: 0;
   clear: both;
-}
-@media (min-width: 544px) {
-  /* line 25, ../sass/style.sass */
-  .container {
-    width: 90%;
-  }
-}
-@media (min-width: 768px) {
-  /* line 25, ../sass/style.sass */
-  .container {
-    width: 80%;
-  }
-}
-@media (min-width: 992px) {
-  /* line 25, ../sass/style.sass */
-  .container {
-    width: 80%;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 25, ../sass/style.sass */
-  .container {
-    width: 992px;
-  }
 }
 
 /* line 43, ../sass/style.sass */
@@ -216,7 +197,7 @@ h5 {
   margin: 0 auto;
   padding: 0;
 }
-@media (min-width: 544px) {
+@media screen and (min-width: 544px) {
   /* line 43, ../sass/style.sass */
   .container-map {
     width: 768px;
@@ -254,7 +235,7 @@ h5 {
   width: 50%;
   float: left;
 }
-@media (max-width: 544px) {
+@media screen and (max-width: 544px) {
   /* line 74, ../sass/style.sass */
   .cover__head__logo {
     float: none;
@@ -273,7 +254,7 @@ h5 {
   width: 50%;
   float: left;
 }
-@media (max-width: 544px) {
+@media screen and (max-width: 544px) {
   /* line 83, ../sass/style.sass */
   .cover__head__menu {
     display: none;
@@ -299,7 +280,7 @@ h5 {
   margin: 0 auto;
   text-align: center;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   /* line 95, ../sass/style.sass */
   .cover__body__copy {
     width: 75%;
@@ -347,7 +328,6 @@ h5 {
 .cover__details__more {
   display: inline-block;
   font-size: 0.9rem;
-  animation: bounce 2.5s infinite;
 }
 
 /* line 143, ../sass/style.sass */
@@ -508,7 +488,6 @@ h5 {
 /* line 257, ../sass/style.sass */
 .content__block--routes__map__modal .modal-wrapper {
   display: inline-block;
-  background-color: rgba(26, 27, 40, 0.9);
   color: #fff;
   padding: 1rem 1.2rem;
   border-radius: 3px;
@@ -563,7 +542,7 @@ h5 {
   color: #fff;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   /* line 304, ../sass/style.sass */
   .content__block__super {
     width: 75%;
