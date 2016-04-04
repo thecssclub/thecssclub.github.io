@@ -1,0 +1,87 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Bussi – Camionetas compartidas para tus viajes diarios
+		link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css", rel="stylesheet")
+		link(href="css/style.css", rel="stylesheet")
+		script(src="https://code.jquery.com/jquery-1.11.3.js")
+		script(src="js/functions.js")
+	body
+		.wrap
+			//.header
+				.container
+					.header__logo
+					.header__menu
+			.cover
+				.container
+					.cover__head
+						.cover__head__logo
+							a(href="")
+								img.cover__head__logo__img(src="img/logo.png")
+						.cover__head__menu
+							ul
+								li Corporativo
+								li ¿Qué es?
+					.cover__body
+						.cover__body__copy
+							h1 Viaja diario a tu destino de forma cómoda, segura y rápida con nosotros.
+							p Cruza la ciudad desde $30MXN diarios.
+							a.main-action(href="#") ¿Cómo funciona?
+					.cover__details
+						span.cover__details__more
+							img(src="img/chevron-down.svg")
+			.content
+				.container
+					.content__block.content__block--about
+						.content__block__super
+							h4 La mejor forma de viajar
+							h3 Bussi resuelve tu ruta
+							p Viaja en nuestras cómodas camionetas y se parte de una nueva forma de moverte en la ciudad, simple y económico.
+				.container
+					.content__block.content__block--routes
+						.content__block--routes__tab
+							a.selected(href="")
+								| <span class="action-valign"></span> <span class="action-text">Rutas disponibles</span>
+							a(href="")
+								| <span class="action-valign"></span> <span class="action-text">Rutas más votadas</span>
+							a(href="")
+								| <span class="action-valign"></span> <span class="action-text">Sugiere tu ruta</span>
+						
+						.content__block--routes__map
+							.content__block--routes__map__controls
+								input(type="text" class="content__block--routes__map__controls__origin" placeholder="¿De donde sales?")
+								input(type="text" class="content__block--routes__map__controls__destination" placeholder="¿A donde vas?")
+								span.content__block--routes__map__controls__search Enviar
+							.content__block--routes__map__jumpin
+								.main-action-wrapper
+								a.main-action(href="#") Subete a Bussi
+							.content__block--routes__map__modal
+								.modal-wrapper
+									p.title ¡Muchas gracias por participar!
+									p Estamos trabajando muy duro en mejorar nuestras rutas, tus votos las hacen posibles.
+
+							.content__block--routes__map__view
+								| <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7524.610399623139!2d-99.20387060000004!3d19.442403900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1459741442166" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				.container
+					.content__block.content__block--benefits
+						.content__block__super
+							h4 Bussi te escucha
+							h3 Los beneficios Bussi
+							p No sólo te ofrecemos comodidad y seguridad. Con BUSSI puedes navegar en la red, leer, dormir, comenzar tu día laboral desde tu lap o simplemente disfrutar el paseo escuchando tú música. Además de todo, tienes la certeza de que llegarás siempre a tiempo y libre de estrés.
+				.container
+					.content__block.content__block--conversion
+						.content__block__super
+							h4 ¿Estás listo?
+							h3 Transporte a tu medida
+							p Viaja en nuestras cómodas camionetas y se parte de una nueva forma de moverte en la ciudad, simple y económico.
+							a.main-action(href="#") Buscar una ruta
+			.pre-footer
+				.container
+					.content_block
+			.footer
+				.container
+					.footer__colophon Footer
+					.footer__colophon Footer
+		

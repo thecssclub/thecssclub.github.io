@@ -1,0 +1,331 @@
+// By @Szimbol
+// Farabeuf FW – Bussi theme
+
+// Structure
+@import "init"
+@import "breakpoints"
+@import "type"
+@import "grid"
+
+// Bounce animation
+
+@keyframes bounce
+	0%, 20%, 50%, 80%, 100%
+		-ms-transform: translateY(0px)
+		transform: translateY(0px)
+	40%
+		-ms-transform: translateY(-20px)
+		transform: translateY(-20px)
+	60%
+	-ms-transform: translateY(-10px)
+	transform: translateY(-10px)
+
+
+// The container super class
+.container
+	margin: 0 auto
+	padding: 1.5rem 1rem
+	&:after 
+		content: "."
+		visibility: hidden
+		display: block
+		height: 0
+		clear: both
+	@media (min-width: $mq-sm)
+		width: 90%
+	@media (min-width: $mq-md)
+		width: 80%
+	@media (min-width: $mq-lg)
+		width: 80%
+	@media (min-width: $mq-xl)
+		width: $mq-lg
+
+.container-map
+	width: 100%
+	margin: 0 auto
+	padding: 0
+	@media (min-width: $mq-sm)
+		width: $mq-md
+	&:after 
+		content: "."
+		visibility: hidden
+		display: block
+		height: 0
+		clear: both
+
+// Main wrapper
+.wrap
+.header
+
+// Cover block
+.cover
+	background-image: url(../img/cover-background.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	color: #fff
+.cover__head
+	&:after 
+		content: "."
+		visibility: hidden
+		display: block
+		height: 0
+		clear: both
+.cover__head__logo
+	width: 50%
+	float: left
+	@media (max-width: $mq-sm)
+		float: none
+		width: 100%
+		text-align: center
+.cover__head__logo__img
+	width: 55px
+.cover__head__menu
+	width: 50%
+	float: left
+	@media (max-width: $mq-sm)
+		display: none
+	ul
+		list-style-type: none
+		li
+			float: right
+			margin: 0.7rem 0 0 1rem
+.cover__body
+	padding: 4rem 0
+.cover__body__copy
+	//width: 90%
+	margin: 0 auto
+	text-align: center
+	@media (min-width: $mq-xl)
+		width: 75%
+	h1
+		font-size: 1.8rem
+	p
+		font-size: 1rem
+		font-weight: 300
+		opacity: 0.7
+	.main-action
+		display: inline-block
+		margin: 1rem auto 0 auto
+		padding: 0.8rem 1.6rem
+		border-radius: 4rem
+		background-color: #fff
+		color: #16121f
+		text-decoration: none
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2)
+		transition: all 0.2s ease
+		&:hover
+			text-decoration: none
+			transform: scale(1.04,1.04)
+			box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2)
+			background-color: #fff
+			color: #16121f
+			background-color: #c2d33c
+			color: #fff
+.cover__details
+	text-align: center
+.cover__details__more
+	display: inline-block
+	font-size: 0.9rem
+	animation: bounce 2.5s infinite
+
+.content
+.content__cover
+.content__cover
+
+
+.content
+
+// Block modules
+.content__block
+
+// About
+.content__block--about
+	padding: 2rem 0 0 0
+
+// Routes
+.content__block--routes
+	padding: 0
+	text-align: center
+.content__block--routes__tab
+	display: inline-block
+	margin: 0 0 2rem 0
+	border-radius: 0.2rem
+	text-align: center
+	font-size: 0.9rem
+	font-weight: 100
+	border: solid 1px #245be7
+	a
+		display: inline-block
+		padding: 0.5rem 1.2rem
+		transition: all 0.1s ease
+		text-decoration: none
+		color: #245be7
+		border-right: 1px solid #245be7
+		&:last-child
+			border-right: none
+		&:hover
+			background-color: #4297ff
+			color: #fff
+	a.selected
+		background-color: #245be7
+		color: #fff
+		&:hover
+			background-color: #4297ff
+			color: #fff
+.content__block--routes__map
+	overflow: hidden
+	position: relative
+
+.content__block--routes__map__controls
+	position: absolute
+	top: 1rem
+	left: 1rem
+	right: 1rem
+	border-radius: 3px
+	overflow: hidden
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3)
+	z-index: 10
+.content__block--routes__map__controls__origin
+	font-size: 0.75rem
+	margin: 0
+	padding: 0.75rem
+	border: none
+	border-right: 1px solid #ddd
+	display: block
+	width: 40%
+	float: left
+	outline: 0
+.content__block--routes__map__controls__destination
+	font-size: 0.75rem
+	margin: 0
+	padding: 0.75rem
+	border: none
+	//border-right: 1px solid #ddd
+	display: block
+	width: 40%
+	float: left
+	outline: 0
+.content__block--routes__map__controls__search
+	font-size: 0.75rem
+	margin: 0
+	padding: 0.75rem
+	border: 0
+	display: block
+	width: 20%
+	float: right
+	outline: 0
+	background-color: #245be7
+	color: #fff
+	text-align: center
+	transition: all 0.1s ease
+	&:hover
+		background-color: #4297ff
+
+.content__block--routes__map__jumpin
+	position: absolute
+	top: 1rem
+	left: 1rem
+	right: 1rem
+	border-radius: 3px
+	z-index: 20
+	.main-action--wrapper
+		text-align: center
+	.main-action
+		display: inline-block
+		padding: 0.8rem 1.6rem
+		border-radius: 4rem
+		background-color: #c2d33c
+		color: #fff
+		text-decoration: none
+		box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2)
+		transition: all 0.2s ease
+		&:hover
+			text-decoration: none
+			transform: scale(1.04,1.04)
+			box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2)
+			background-color: #c2d33c
+			color: #fff
+
+.content__block--routes__map__modal
+	position: absolute
+	z-index: 20
+	bottom: 1rem
+	left: 0
+	right: 0
+	text-align: center
+	.modal-wrapper
+		display: inline-block
+		background-color: rgba(26, 27, 40, 0.9)
+		color: #fff
+		padding: 1rem 1.2rem
+		border-radius: 3px
+	.title
+		font-size: 0.7rem
+		font-weight: 500
+		margin: 0
+	p
+		font-size: 0.7rem
+		margin: 0
+
+.content__block--routes__map__view
+	height: 75vh
+
+
+// Benefits
+.content__block--benefits
+	padding: 2rem 0 0 0
+
+// Conversion
+.content__block--conversion
+	padding: 2rem 0 0 0
+	text-align: center
+	.main-action
+		display: inline-block
+		margin: 1rem auto 0 auto
+		padding: 0.8rem 1.6rem
+		border-radius: 4rem
+		background-color: #c2d33c
+		color: #fff
+		text-decoration: none
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2)
+		transition: all 0.2s ease
+		&:hover
+			text-decoration: none
+			transform: scale(1.04,1.04)
+			box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2)
+			background-color: #fff
+			color: #16121f
+			background-color: #c2d33c
+			color: #fff
+
+
+// Super modules
+.content__block__super
+	@media (min-width: $mq-lg)
+		width: 75%
+		margin: 0 auto
+	h4
+		text-align: center
+		text-transform: uppercase
+		font-weight: 700
+		font-family: 'Roboto', helvetica, arial, sans-serif
+		font-size: 0.75rem
+		color: #b3b3b3
+		margin-bottom: 0rem
+	h3
+		color: #245be7
+		font-weight: 100
+		text-align: center
+		font-size: 1.75rem
+		font-family: 'Ubuntu', helvetica, arial, sans-serif
+		margin-bottom: 1rem
+	p
+		text-align: center
+		font-size: 1.2rem
+		font-weight: 100
+		margin-bottom: 0
+
+.footer
+	background-color: #121125
+.footer__colophon
