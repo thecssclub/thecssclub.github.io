@@ -99,8 +99,7 @@ body {
 
 .l-app-menu__container {
   padding: 1rem;
-  height: 100%;
-  border-top: #ddd solid 1px; }
+  height: 100%; }
 
 .l-app-menu__group {
   list-style-type: none;
