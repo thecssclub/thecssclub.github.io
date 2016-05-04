@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300,100");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  font-size: 18px;
+  font-family: "Roboto", Arial, Helvetica, Sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  height: inherit;
+  background-color: #141414;
+  color: #999; }
+
+.l-app-bar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; }
+
+.l-app-bar__head {
+  padding: 1.2rem 1rem;
+  display: table;
+  width: 100%; }
+
+.l-app-bar__menu {
+  display: table-cell;
+  width: 25%;
+  color: #999;
+  vertical-align: middle; }
+  .l-app-bar__menu img {
+    vertical-align: middle; }
+
+.l-app-bar__title {
+  display: table-cell;
+  width: 50%;
+  text-align: center;
+  vertical-align: middle; }
+  .l-app-bar__title img {
+    vertical-align: middle; }
+
+.l-app-bar__cart {
+  display: table-cell;
+  width: 25%;
+  text-align: right;
+  vertical-align: middle; }
+  .l-app-bar__cart img {
+    vertical-align: middle; }
+
+.l-app-bar__cart__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #DA262D;
+  vertical-align: middle; }
+
+.l-app-bar__cart__label__counter {
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 400; }
+
+.l-app-bar__search {
+  padding: 0 1rem 1rem 1rem; }
+  .l-app-bar__search input[type="search"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #ccc;
+    outline: none;
+    background-color: #555; }
+
+.l-app-content {
+  padding-top: 107px;
+  overflow: hidden; }
